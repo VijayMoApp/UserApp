@@ -116,7 +116,7 @@ fun LoginScreen(navController: NavController, viewModel: LoginViewModel = hiltVi
                     color = MaterialTheme.colorScheme.primary
                 )
                 sharedViewModel.setLoginResponse(data)
-                navController.navigate("account")
+
             }
 
             is LoginUiState.Failure -> {
